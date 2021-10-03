@@ -10,10 +10,10 @@ from SDSongBot import LOGGER
 pm_start_text = """
 Hey [{}](tg://user?id={}), I'm Aleesa🧚‍♀️❤️ Song Downloader Bot 🎵
 
-😉 Just send me the song name you want to download.😋
-      eg:```/song Faded```
+😉 ඔබට Download කර ගැනීමට අවශ්‍ය ගීතයේ නම මට එවන්න.😋
+      eg: /song Lelena
       
-A bot by @SDBotsz 🇱🇰
+A bot by @Musicworldanu 🇱🇰
 """
 
 @app.on_message(filters.command("start"))
