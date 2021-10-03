@@ -44,7 +44,7 @@ def song(client, message):
 
     except Exception as e:
         m.edit(
-            "❌ Found Nothing.\n\nTry another keywork or maybe spell it properly."
+            "**❌ කිසිවක් හමු නොවීය😕.\n\nකණගාටුයි😐 වෙනත් විදිහකට උත්සාහ කරන්න, නැතහොත් එය නිසියාකාරව Type කරන්න😕.**"
         )
         print(str(e))
         return
@@ -62,7 +62,7 @@ def song(client, message):
         s = message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
-        m.edit('❌ Error')
+        m.edit('❌ Error😖')
         print(e)
 
     try:
