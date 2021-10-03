@@ -1,4 +1,4 @@
-# Plugin by @Mr_Dark_Prince
+# Plugin by @Anujasupulsara
 #SDBOTs <https://t.me/SDBOTs_Inifinity>
 
 import os
@@ -26,7 +26,7 @@ def song(client, message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    m = message.reply('🔎 Finding the song...')
+    m = message.reply('**🔎  Finding the your song😉...**')
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -48,13 +48,13 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit("📥 Downloading the song by @SDbotsz 📥")
+    m.edit(" **📥 Downloading the song by @Musicworldanu 📥** ")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**~ Uploaded by @SDbotsz ~**'
+        rep = '**😍 Uploaded by @Musicworldanu 😍**'
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
