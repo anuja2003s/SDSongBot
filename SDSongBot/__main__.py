@@ -8,7 +8,7 @@ from SDSongBot import SDbot as app
 from SDSongBot import LOGGER
 
 pm_start_text = """
-Hey [{}](tg://user?id={}), I'm Song Downloader Bot 🎵
+Hey [{}](tg://user?id={}), I'm Aleesa🧚‍♀️❤️ Song Downloader Bot 🎵
 
 😉 Just send me the song name you want to download.😋
       eg:```/song Faded```
@@ -26,10 +26,10 @@ async def start(client, message):
             [
                 [
                      InlineKeyboardButton(
-                        text="Channel 🔊", url="https://t.me/SDbotsz"
+                        text="⭕️ Channel ⭕️", url="https://t.me/Musicworldanu"
                     ),
                     InlineKeyboardButton(
-                        text="Dev 🔥", url="https://t.me/Darkridersslk"
+                        text="Owner 🔥", url="https://t.me/Anujasupulsara"
                     )
                 ]
             ]
