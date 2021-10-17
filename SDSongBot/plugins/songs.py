@@ -48,7 +48,7 @@ def song(client, message):
         )
         print(str(e))
         return
-    m.edit(" **හරි ඔයා හොයපු Song එක මට හම්බ වුණෝ 😃📥** \n\n ılı _.●●- UPLOADING-●●._ılı \n ▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █ \n Min- – – – – – – – – -●Max\n\n**🎯 Percentage : 100.0%**\n**💫 Done: ✅**\n**⚙️ Total: 🔮 SONG●●●**\n**🚀 Speed: Fast🎲**\n**🕒 ETA: 3s📤😄** ")
+    m.edit(" **හරි ඔයා හොයපු Song එක මට හම්බ වුණෝ 😃📥** \n\n ılı _.●- UPLOADING-●._ılı \n ▄ █ ▄ █ ▄ ▄ █ ▄ █ ▄ █ \n Min- – – – – – – – – -●Max\n\n**🎯 Percentage : 100.0%**\n**💫 Done: ✅**\n**⚙️ Total: 🔮 SONG●●●**\n**🚀 Speed: Fast🎲**\n**🕒 ETA: 3s📤😄** ")
     try:
         with youtube_dl.YoutubeDL(ydl_opts) as ydl:
             info_dict = ydl.extract_info(link, download=False)
