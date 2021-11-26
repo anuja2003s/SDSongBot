@@ -55,8 +55,6 @@ def song(client, message):
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
         rep = '**😍 මෙන්න ඔයාගෙ  Song  එක මම 😜 අරන් ආවා,\n  ඔයා😊  කැමති  නම්,\n මගේ🙈❤️  Channel  එකට  Join  වෙන්න  මෙතනින් 👉 @Musicworldanu 😍**'
-      
-    wel = f"**😍 මෙන්න ඔයාගෙ ** <b>{message.from_user.first_name}</b>\n\n **Song  එක**
     
         
         secmul, dur, dur_arr = 1, 0, duration.split(':')
