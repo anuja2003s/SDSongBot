@@ -54,14 +54,16 @@ def song(client, message):
             info_dict = ydl.extract_info(link, download=False)
             audio_file = ydl.prepare_filename(info_dict)
             ydl.process_info(info_dict)
-        rep = '**😍 මෙන්න f" <b>{message.from_user.first_name}</b>" ඔයාගෙ  Song  එක මම 😜 අරන් ආවා,\n  ඔයා😊  කැමති  නම්,\n මගේ🙈❤️  Channel  එකට  Join  වෙන්න  මෙතනින් 👉 @Musicworldanu 😍**'
+        rep = '**😍 මෙන්න ඔයාගෙ  Song  එක මම 😜 අරන් ආවා,\n  ඔයා😊  කැමති  නම්,\n මගේ🙈❤️  Channel  එකට  Join  වෙන්න  මෙතනින් 👉 @Musicworldanu 😍**'
       
+    wel = f"**😍 මෙන්න ඔයාගෙ ** <b>{message.from_user.first_name}</b>\n\n **Song  එක**
+    
         
         secmul, dur, dur_arr = 1, 0, duration.split(':')
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        s = message.reply_audio(audio_file, caption=rep, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
+        s = message.reply_audio(audio_file, caption=rep,caption=wel, thumb=thumb_name, parse_mode='md', title=title, duration=dur)
         m.delete()
     except Exception as e:
         m.edit('**❌ Error😖**')
